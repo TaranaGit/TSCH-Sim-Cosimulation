@@ -1,0 +1,4 @@
+asn=0    	id=-1  	Main	copying configuration file E:\tsch-sim-tegveer\examples\exampleTegveer\config.json to output directory E:\tsch-sim-tegveer\results\2023-09-10_02-43-07\config.json[MAIN]
+asn=0    	id=-1  	Main	initializing 600 seconds long simulation...[SIMULATOR]
+asn=0    	id=-1  	TSCH	Orchestra: initializing Orchestra infrastructure
+asn=0    	id=-1  	Main	creating 4 "node" nodes...[SIMULATOR]

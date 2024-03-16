@@ -1,0 +1,89 @@
+{
+    "SIMULATION_DURATION_SEC": 600,
+    "ROUTING_ALGORITHM": "ManualRouting",
+    "SCHEDULING_ALGORITHM": "NewScheduler", 
+    "MAC_HOPPING_SEQUENCE": "TSCH_HOPPING_SEQUENCE_2_2",
+    "APP_WARMUP_PERIOD_SEC":50,
+    "ACTION_SPACE" : 9,
+    "SIMULATION_LERAN_TIMEUP": 200,
+    "NODE_TYPES": [
+        {
+            "NAME": "root",
+            "START_ID": 1,
+            "COUNT": 1
+        },
+        {
+            "NAME": "intermediate2",
+            "START_ID": 2,
+            "COUNT":1,
+            "APP_PACKETS": {"APP_PACKET_PERIOD_SEC": 1, "TO_ID": 1}
+        },
+        {
+            "NAME": "intermediate3",
+            "START_ID": 3,
+            "COUNT":1,
+            "APP_PACKETS": {"APP_PACKET_PERIOD_SEC": 1, "TO_ID": 1}
+        },
+        {
+            "NAME": "leaf1",
+            "START_ID": 4,
+            "COUNT":1,
+            "APP_PACKETS": {"APP_PACKET_PERIOD_SEC": 3, "TO_ID": 1}
+        },
+        {
+            "NAME": "leaf2",
+            "START_ID": 5,
+            "COUNT":2,
+            "APP_PACKETS": {"APP_PACKET_PERIOD_SEC":3, "TO_ID": 1}
+        },
+        {
+            "NAME": "leaf3",
+            "START_ID": 7,
+            "COUNT":1,
+            "APP_PACKETS": {"APP_PACKET_PERIOD_SEC": 3, "TO_ID": 1}
+        }
+    ],
+
+   "POSITIONS": [
+    {"ID": 1, "X": 20, "Y":25},
+    {"ID": 2, "X": 22.5, "Y": 22},
+    {"ID": 3, "X": 17.5, "Y": 22},
+    {"ID": 4, "X": 17, "Y": 27},
+    {"ID": 5, "X": 26, "Y": 22},
+    {"ID": 6, "X": 22.5, "Y":19},
+    {"ID": 7, "X": 17.5, "Y": 19}
+    ],
+    
+    "CONNECTIONS": [
+        { "FROM_ID": 1, "TO_ID": 2,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 2, "TO_ID": 1,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 1, "TO_ID": 3,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 3, "TO_ID": 1,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 1, "TO_ID": 4,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 4, "TO_ID": 1,  "LINK_MODEL": "UDGM" },
+       
+        { "FROM_ID": 5, "TO_ID": 2,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 2, "TO_ID": 5,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 6, "TO_ID": 2,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 2, "TO_ID": 6,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 7, "TO_ID": 3,  "LINK_MODEL": "UDGM" },
+        { "FROM_ID": 3, "TO_ID": 7,  "LINK_MODEL": "UDGM" }
+
+    ],
+
+    "ROUTE":[
+        {"NODE_ID": 2, "DESTINATION_ID": 1, "NEXTHOP_ID": 1}, 
+        {"NODE_ID": 3, "DESTINATION_ID": 1, "NEXTHOP_ID": 1}, 
+        {"NODE_ID": 4, "DESTINATION_ID": 1, "NEXTHOP_ID": 1},
+      
+        {"NODE_ID": 5, "DESTINATION_ID": 2, "NEXTHOP_ID": 2}, 
+        {"NODE_ID": 5, "DESTINATION_ID": 1, "NEXTHOP_ID": 2},
+        {"NODE_ID": 6, "DESTINATION_ID": 2, "NEXTHOP_ID": 2}, 
+        {"NODE_ID": 6, "DESTINATION_ID": 1, "NEXTHOP_ID": 2},
+        {"NODE_ID": 7, "DESTINATION_ID": 3, "NEXTHOP_ID": 3}, 
+        {"NODE_ID": 7, "DESTINATION_ID": 1, "NEXTHOP_ID": 3}
+    
+    ]
+
+}   
+ 

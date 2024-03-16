@@ -1,0 +1,44 @@
+asn=0    	id=-1  	Main	copying configuration file E:\tsch-sim-tegveer\examples\exampleTegveer\config.json to output directory E:\tsch-sim-tegveer\results\2023-09-10_02-45-22\config.json[MAIN]
+asn=0    	id=-1  	Main	initializing 600 seconds long simulation...[SIMULATOR]
+asn=0    	id=-1  	TSCH	Orchestra: initializing Orchestra infrastructure
+asn=0    	id=-1  	Main	creating 4 "node" nodes...[SIMULATOR]
+asn=0    	id=-1  	Main	generating a line network with 4 nodes
+asn=0    	id=1   	Main	set position x=0.00 y=0.00[SIMULATOR]
+asn=0    	id=2   	Main	set position x=117.37 y=0.00[SIMULATOR]
+asn=0    	id=3   	Main	set position x=234.74 y=0.00[SIMULATOR]
+asn=0    	id=4   	Main	set position x=352.10 y=0.00[SIMULATOR]
+asn=0    	id=-1  	App	new packet source, from=2 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=3 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	App	new packet source, from=4 for=1 period=10 warmup=100 [PACKET_SOURCE]
+asn=0    	id=-1  	Main	simulation created[SIMULATOR]
+asn=0    	id=-1  	Main	starting simulation main loop...[SIMULATOR]
+asn=0    	id=1   	TSCH	Orchestra: *** initializing
+asn=0    	id=1   	TSCH	Orchestra: initializing rule EB per time source (handle=0 slotframe_size=397)
+asn=0    	id=1   	Node	Slotframe number 1 added from node: 1 [NODE]
+asn=0    	id=1   	Node	Add cell in timeslot: 1 channel offset: 0 in slotframe: 1
+asn=0    	id=1   	TSCH	Orchestra: initializing rule unicast per neighbor storing (handle=1 slotframe_size=17)
+asn=0    	id=1   	TSCH	Orchestra: storing rule, receiver based
+asn=0    	id=1   	Node	Slotframe number 2 added from node: 1 [NODE]
+asn=0    	id=1   	Node	Add cell in timeslot: 1 channel offset: 3 in slotframe: 2
+asn=0    	id=1   	TSCH	Orchestra: initializing rule default common (handle=2 slotframe_size=31)
+asn=0    	id=1   	Node	Slotframe number 3 added from node: 1 [NODE]
+asn=0    	id=1   	Node	Add cell in timeslot: 0 channel offset: 1 in slotframe: 3
+asn=0    	id=1   	TSCH	Orchestra: initialization done
+asn=0    	id=1   	Node	becomes TSCH coordinator
+asn=0    	id=1   	TSCH	Node has joined TSCH as coordinator [NODE]
+asn=0    	id=1   	TSCH	Node has joined TSCH [NODE]
+asn=0    	id=1   	Node	update time source called [NODE]
+asn=0    	id=2   	TSCH	Orchestra: *** initializing
+asn=0    	id=2   	TSCH	Orchestra: initializing rule EB per time source (handle=0 slotframe_size=397)
+asn=0    	id=2   	Node	Slotframe number 1 added from node: 2 [NODE]
+asn=0    	id=2   	Node	Add cell in timeslot: 2 channel offset: 0 in slotframe: 1
+asn=0    	id=2   	TSCH	Orchestra: initializing rule unicast per neighbor storing (handle=1 slotframe_size=17)
+asn=0    	id=2   	TSCH	Orchestra: storing rule, receiver based
+asn=0    	id=2   	Node	Slotframe number 2 added from node: 2 [NODE]
+asn=0    	id=2   	Node	Add cell in timeslot: 2 channel offset: 4 in slotframe: 2
+asn=0    	id=2   	TSCH	Orchestra: initializing rule default common (handle=2 slotframe_size=31)
+asn=0    	id=2   	Node	Slotframe number 3 added from node: 2 [NODE]
+asn=0    	id=2   	Node	Add cell in timeslot: 0 channel offset: 1 in slotframe: 3
+asn=0    	id=2   	TSCH	Orchestra: initialization done
+asn=0    	id=2   	TSCH	Node has joined TSCH [NODE]
+asn=0    	id=2   	Node	update time source called [NODE]
